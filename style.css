@@ -1,0 +1,130 @@
+:root,
+[data-theme="light"] {
+    --color1: #e8eddf;
+    --color2: #cfdbd5;
+    --color3: #333533;
+    --color4: #242423;
+    --color5: #2d6a4f;
+    --color6: #12516E;
+
+    --texte: #202020;
+    --texte2: #DEE2E6;
+}
+
+[data-theme="dark"] {
+    --color1: #333533;
+    --color2: #242423;
+    --color3: #e8eddf;
+    --color4: #cfdbd5;
+    --color5: #99d98c;
+    --color6: #34a0a4;
+
+    --texte: #DEE2E6;
+    --texte2: #202020;
+}
+
+body {
+    background:var(--color2);
+}
+
+.tri {
+    background: var(--color1);
+    color:var(--color5);
+    height:45px;
+}
+
+.tri span {
+    font-family: "Orbitron", sans-serif;
+}
+
+.offcanvas {
+    background: var(--color4);
+    color:var(--texte2);
+}
+
+.btn {
+    background: var(--color6);
+    color:var(--texte2);
+}
+
+.btn:hover {
+    background:var(--color5);
+    color:var(--texte);
+}
+
+.mlist span {
+    display:block;
+    font-family:'Major Mono Display';
+    background:var(--color5);
+    color:var(--texte2);
+    padding:3px 5px;
+    margin:5px 0;
+    border:2px solid var(--color4);
+}
+
+.mlist li {
+    list-style-type:none;
+}
+
+#gallery_Autre {
+    display: none;
+}
+
+.gallery {
+    overflow: auto;
+    display: flex;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.card {
+    border:3px solid var(--color5) !important;
+    width:205px;
+}
+
+.card-img-top {
+    height:320px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-family: "Major Mono Display", monospace;
+    text-transform: uppercase;
+    font-size:18px !important;
+    margin:0 !important;
+}
+
+.card-body {
+    background:var(--color4);
+    color:var(--texte2);
+    text-align: center !important;
+}
+
+.card-body em {
+    font-size:13px;
+}
+
+.card-body h6 {
+    text-decoration: underline;
+    color:var(--color6);
+    font-family: "Orbitron", sans-serif;
+}
+
+.card-text {
+    text-align:justify;
+    font-size:12px;
+    margin: 5px 0;
+}
+
+.card-text u {
+    font-family: "Orbitron", sans-serif;
+    text-transform: uppercase;
+    color:var(--color6);
+}
+
+input[type="radio"].themeIn {
+    display: none;
+}
